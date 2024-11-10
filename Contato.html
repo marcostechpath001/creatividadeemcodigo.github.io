@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Marcos Rodrigues</h1>
+        <p>Web Designer, Desenvolvedor de Sistemas, Palestrante e Estudante de Engenharia</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="habilidade.html">Habilidades</a></li>
+            <li><a href="patrocinio.html">Patrocínio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="content">
+                <p>Se você tem alguma dúvida, sugestão ou gostaria de entrar em contato para parcerias ou oportunidades, fique à vontade para me enviar uma mensagem. Aqui estão algumas formas de entrar em contato comigo:</p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/marcos_techpath/?next=%2F" target="_blank" class="social-link">
+                        <img src="./img/Instagram.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5544991559263&text=Ol%C3%A1!%20Desejo%20saber%20mais%20sobre%20seus%20projetos%20ou%20sobre%20planos%20para%20patroc%C3%ADnio" target="_blank" class="social-link">
+                        <img src="./img/whatsapp.png" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Exibe mensagem de sucesso -->
+                <div id="successMessage" style="display: none;">
+                    <p>Mensagem enviada com sucesso, retornaremos em breve!</p>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="contact-form">
+                    <h3>Envie uma mensagem:</h3>
+                    <form id="contactForm" action="javascript:void(0);" method="post">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Meu Portfólio | Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Script para envio do formulário -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
